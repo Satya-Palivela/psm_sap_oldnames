@@ -18,10 +18,10 @@
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
-        <scope>x_snc_psm_sap_intg</scope>
+        <scope>sn_psm_sap_int</scope>
         <scoped_administration>false</scoped_administration>
         <short_description/>
-        <source>x_snc_psm_sap_intg</source>
+        <source>sn_psm_sap_int</source>
         <store_correlation_id/>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>

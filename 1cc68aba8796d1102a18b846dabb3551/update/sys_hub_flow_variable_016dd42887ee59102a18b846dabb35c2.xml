@@ -38,7 +38,7 @@
         <label>PO Item JSON</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Post Purchase Order to SAP S4Hana">040c9ca487ee59102a18b846dabb3597</model>
+        <model display_value="Create purchase order in SAP S4Hana">040c9ca487ee59102a18b846dabb3597</model>
         <model_id>040c9ca487ee59102a18b846dabb3597</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_040c9ca487ee59102a18b846dabb3597</name>
@@ -63,7 +63,7 @@
         <sys_id>016dd42887ee59102a18b846dabb35c2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PO Item JSON</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_flow_variable_016dd42887ee59102a18b846dabb35c2</sys_update_name>

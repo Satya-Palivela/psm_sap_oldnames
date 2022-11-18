@@ -9,10 +9,10 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>post_purchase_order_to_sap_ecc</internal_name>
-        <label_cache>[{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__.message","label":"15➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__","label":"15 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__","label":"1 - Create ECC PO Header Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD41bc5a4c78e61910d2dba6c50ebd3e88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fa8de6c0-dfce-4095-8520-3f37f942c124"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__dont_treat_as_error__","label":"1 - Create ECC PO Header Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a5108212-c4d0-4600-a18f-26363488a6c4"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.purchase_order_header","label":"1 - Create ECC PO Header Object➛Purchase Order Header","reference_display":"Purchase Order Header","type":"object","base_type":"object","attributes":{"sourceId":"5e009b9d-2f0c-4a92-9207-cc25b8196996","uiTypeLabel":"Object","co_type_name":"FD81bc5a4c4be6191025e7e680aad9628a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"d3ab3035-9572-40d4-a5e6-b27913d99c87","uiType":"object","uiUniqueId":"70145b9a-a72d-4fb3-a061-4821d8eb781f"}},{"name":"subflow.psm_po","label":"Input➛PSM PO","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"30f3e12b-8313-4e5d-9474-4eb411a5ff47"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Records","label":"2 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Table","label":"2 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c5c3f269-038f-425e-b0e6-f86f2a1e17ab.item","label":"6 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__action_status__","label":"7 - Create ECC PO Items Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD8b0dde4c2ee619105730026a34db41ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ee45b667-1960-4b8e-a4c9-f246bb300096"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__dont_treat_as_error__","label":"7 - Create ECC PO Items Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"6b05d276-6121-456d-8ca7-57550f719764"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.purchase_order_item","label":"7 - Create ECC PO Items Object➛Purchase Order Item","reference_display":"Purchase Order Item","type":"object","base_type":"object","attributes":{"sourceId":"17143926-d252-47db-917f-9af23ad7f0ac","uiTypeLabel":"Object","co_type_name":"FDcb0dde4c5be6191048ece1bdf990e1f0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b2cebc7d-922d-4767-8259-45ecec67099b","uiType":"object","uiUniqueId":"6991f111-e346-43ad-9755-51e24b7067a1"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.po_accounts","label":"6 - Create ECC PO Accounts Object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__action_status__","label":"6 - Create ECC PO Accounts Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__dont_treat_as_error__","label":"6 - Create ECC PO Accounts Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.output_object","label":"6 - Create Complex Object from JSON➛Output Object","reference_display":"Output Object","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ab39c3d4-62a9-49d3-9ad3-ceb136d094bf"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__action_status__","label":"6 - Create Complex Object from JSON➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9435860c0f6619109da07387f6e613d7","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7c849d27-a56e-456e-8cc2-4a0e37c2b650"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__dont_treat_as_error__","label":"6 - Create Complex Object from JSON➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f201b913-bae5-4856-a927-1ab4e349584e"}},{"name":"flow_variable.po_order_line_json","label":"Flow Variables➛PO Order Line JSON","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3939fbe3-cf50-4ce6-b38c-3cc18ffe9caa"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output","label":"10 - Create Purchase Order➛Purchase Order Data","reference_display":"Purchase Order Data","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13e9d601-4068-4e5a-b589-db29f9bd9867"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.status","label":"10 - Create Purchase Order➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ea5cd325-2103-40e2-8677-bec01a40679b"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.err","label":"10 - Create Purchase Order➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1c6d218e-0e3a-4896-b126-1b3ecb88e18f"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__action_status__","label":"10 - Create Purchase Order➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__dont_treat_as_error__","label":"10 - Create Purchase Order➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.record","label":"8 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.table_name","label":"8 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPPURCHASEORDER","label":"10➛Purchase Order Data➛Purchasing Document","type":"string","base_type":"string"},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Records","label":"10 - Look Up Records➛Purchasing Task Records","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Table","label":"10 - Look Up Records➛Purchasing Task Table","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Count","label":"10 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__action_status__","label":"10 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__dont_treat_as_error__","label":"10 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPHEADER.PO_NUMBER","label":"10➛Purchase Order Data➛Header Data [ EXPHEADER ]➛Purchasing Document","type":"string","base_type":"string"},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.po_accounts","label":"6 - Create ECC PO Accounts Object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__action_status__","label":"6 - Create ECC PO Accounts Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__dont_treat_as_error__","label":"6 - Create ECC PO Accounts Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.po_items","label":"9 - Create ECC PO Item Complex Object➛PO Items","reference_display":"PO Items","type":"array.object","base_type":"array.object","attributes":{"sourceId":"92023e21-5e31-4e8d-bbdf-ba345f85912b","child_name":"Item","uiUniqueId":"3198eac1-0374-46e8-b8b8-5b424ab15698","uiTypeLabel":"Array.Object","co_type_name":"FD430b8824ddae59105fb09458bada9bac","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f160293a-229b-4198-b71a-86c477decc0f","uiType":"array.object","child_type":"object","child_uiUniqueId":"4b606925-4c61-47af-a66a-b4db3015636a"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__action_status__","label":"9 - Create ECC PO Item Complex Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD070b882496ae591061676671de8e8dae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ea07b35c-9463-478a-a386-d608403c0c11"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__dont_treat_as_error__","label":"9 - Create ECC PO Item Complex Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"02b88379-8c9a-44b8-bab7-1322e478eece"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <internal_name>create_purchase_order_in_sap_ecc</internal_name>
+        <label_cache>[{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__.message","label":"15➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__","label":"15 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__","label":"1 - Generate ECC PO header object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD41bc5a4c78e61910d2dba6c50ebd3e88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fa8de6c0-dfce-4095-8520-3f37f942c124"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__dont_treat_as_error__","label":"1 - Generate ECC PO header object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a5108212-c4d0-4600-a18f-26363488a6c4"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.purchase_order_header","label":"1 - Generate ECC PO header object➛Purchase Order Header","reference_display":"Purchase Order Header","type":"object","base_type":"object","attributes":{"sourceId":"5e009b9d-2f0c-4a92-9207-cc25b8196996","uiTypeLabel":"Object","co_type_name":"FD81bc5a4c4be6191025e7e680aad9628a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"d3ab3035-9572-40d4-a5e6-b27913d99c87","uiType":"object","uiUniqueId":"70145b9a-a72d-4fb3-a061-4821d8eb781f"}},{"name":"subflow.psm_po","label":"Input➛PSM PO","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"30f3e12b-8313-4e5d-9474-4eb411a5ff47"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Records","label":"2 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Table","label":"2 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c5c3f269-038f-425e-b0e6-f86f2a1e17ab.item","label":"6 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__action_status__","label":"7 - Generate ECC PO line object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD8b0dde4c2ee619105730026a34db41ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ee45b667-1960-4b8e-a4c9-f246bb300096"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__dont_treat_as_error__","label":"7 - Generate ECC PO line object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"6b05d276-6121-456d-8ca7-57550f719764"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.purchase_order_item","label":"7 - Generate ECC PO line object➛Purchase Order Item","reference_display":"Purchase Order Item","type":"object","base_type":"object","attributes":{"sourceId":"17143926-d252-47db-917f-9af23ad7f0ac","uiTypeLabel":"Object","co_type_name":"FDcb0dde4c5be6191048ece1bdf990e1f0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b2cebc7d-922d-4767-8259-45ecec67099b","uiType":"object","uiUniqueId":"6991f111-e346-43ad-9755-51e24b7067a1"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.po_accounts","label":"6 - Generate ECC PO accounts object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__action_status__","label":"6 - Generate ECC PO accounts object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__dont_treat_as_error__","label":"6 - Generate ECC PO accounts object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.output_object","label":"6 - Create Complex Object from JSON➛Output Object","reference_display":"Output Object","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ab39c3d4-62a9-49d3-9ad3-ceb136d094bf"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__action_status__","label":"6 - Create Complex Object from JSON➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9435860c0f6619109da07387f6e613d7","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7c849d27-a56e-456e-8cc2-4a0e37c2b650"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__dont_treat_as_error__","label":"6 - Create Complex Object from JSON➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f201b913-bae5-4856-a927-1ab4e349584e"}},{"name":"flow_variable.po_order_line_json","label":"Flow Variables➛PO Order Line JSON","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3939fbe3-cf50-4ce6-b38c-3cc18ffe9caa"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output","label":"10 - Create Purchase Order➛Purchase Order Data","reference_display":"Purchase Order Data","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13e9d601-4068-4e5a-b589-db29f9bd9867"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.status","label":"10 - Create Purchase Order➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ea5cd325-2103-40e2-8677-bec01a40679b"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.err","label":"10 - Create Purchase Order➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1c6d218e-0e3a-4896-b126-1b3ecb88e18f"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__action_status__","label":"10 - Create Purchase Order➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__dont_treat_as_error__","label":"10 - Create Purchase Order➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.record","label":"8 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.table_name","label":"8 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPPURCHASEORDER","label":"10➛Purchase Order Data➛Purchasing Document","type":"string","base_type":"string"},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Records","label":"10 - Look Up Records➛Purchasing Task Records","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Table","label":"10 - Look Up Records➛Purchasing Task Table","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Count","label":"10 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__action_status__","label":"10 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__dont_treat_as_error__","label":"10 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPHEADER.PO_NUMBER","label":"10➛Purchase Order Data➛Header Data [ EXPHEADER ]➛Purchasing Document","type":"string","base_type":"string"},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.po_accounts","label":"6 - Generate ECC PO accounts object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__action_status__","label":"6 - Generate ECC PO accounts object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__dont_treat_as_error__","label":"6 - Generate ECC PO accounts object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.po_items","label":"9 - Generate ECC PO lines complex object➛PO Items","reference_display":"PO Items","type":"array.object","base_type":"array.object","attributes":{"sourceId":"92023e21-5e31-4e8d-bbdf-ba345f85912b","child_name":"Item","uiUniqueId":"3198eac1-0374-46e8-b8b8-5b424ab15698","uiTypeLabel":"Array.Object","co_type_name":"FD430b8824ddae59105fb09458bada9bac","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f160293a-229b-4198-b71a-86c477decc0f","uiType":"array.object","child_type":"object","child_uiUniqueId":"4b606925-4c61-47af-a66a-b4db3015636a"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__action_status__","label":"9 - Generate ECC PO lines complex object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD070b882496ae591061676671de8e8dae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ea07b35c-9463-478a-a386-d608403c0c11"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__dont_treat_as_error__","label":"9 - Generate ECC PO lines complex object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"02b88379-8c9a-44b8-bab7-1322e478eece"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
         <master_snapshot>34c66f48872e19102a18b846dabb35de</master_snapshot>
-        <name>Post Purchase Order to SAP ECC</name>
+        <name>Create purchase order in SAP ECC</name>
         <natlang/>
         <outputs/>
         <remote_trigger_id/>
@@ -29,9 +29,9 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1457520887e619102a18b846dabb35f8</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Post Purchase Order to SAP ECC</sys_name>
+        <sys_name>Create purchase order in SAP ECC</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_flow_1457520887e619102a18b846dabb35f8</sys_update_name>
@@ -47,7 +47,7 @@
     <sys_flow_cat_variable_model action="delete_multiple" query="id=1457520887e619102a18b846dabb35f8^sys_idNOT IN5057520887e619102a18b846dabb35fa"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>1457520887e619102a18b846dabb35f8</id>
-        <name>Post Purchase Order to SAP ECC</name>
+        <name>Create purchase order in SAP ECC</name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-10 09:32:19</sys_created_on>
         <sys_id>5057520887e619102a18b846dabb35fa</sys_id>
@@ -97,7 +97,7 @@
         <label>PSM PO</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</model>
+        <model display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</model>
         <model_id>1457520887e619102a18b846dabb35f8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_input_1457520887e619102a18b846dabb35f8</name>
@@ -179,7 +179,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</model>
+        <model display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</model>
         <model_id>1457520887e619102a18b846dabb35f8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8</name>
@@ -260,7 +260,7 @@
         <label>ERP Purchase Order Number</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</model>
+        <model display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</model>
         <model_id>1457520887e619102a18b846dabb35f8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8</name>
@@ -341,7 +341,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</model>
+        <model display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</model>
         <model_id>1457520887e619102a18b846dabb35f8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8</name>
@@ -388,11 +388,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Item Complex Object">3e0b882487ae59102a18b846dabb358d</action_type>
+        <action_type display_value="Generate ECC PO lines complex object">3e0b882487ae59102a18b846dabb358d</action_type>
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <order>9</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -424,11 +424,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Items Object">760dde4c87e619102a18b846dabb3596</action_type>
+        <action_type display_value="Generate ECC PO line object">760dde4c87e619102a18b846dabb3596</action_type>
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <order>7</order>
         <parent_ui_id>c5c3f269-038f-425e-b0e6-f86f2a1e17ab</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -460,11 +460,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Header Object">e0bc5a4c87e619102a18b846dabb3539</action_type>
+        <action_type display_value="Generate ECC PO header object">e0bc5a4c87e619102a18b846dabb3539</action_type>
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <order>1</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -500,7 +500,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <order>2</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -561,7 +561,7 @@
         <action_type_parent/>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <order>10</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -643,7 +643,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -717,7 +717,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -751,7 +751,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -814,7 +814,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned>po_order_line_json</flow_variables_assigned>
         <inputs/>
@@ -845,7 +845,7 @@
         <input_name>po_order_line_json</input_name>
         <instance>73f3870487aa19102a18b846dabb35f7</instance>
         <referenced_table>sys_hub_flow_logic</referenced_table>
-        <script>{"po_order_line_json":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar latestRec \u003d fd_data._7__create_ecc_po_items_object.purchase_order_item;\nvar flowVar \u003d fd_data.flow_var.po_order_line_json;\nif(flowVar\u003d\u003d\u0027\u0027){\n    var str \u003d \u0027{\"data\":[\u0027+JSON.stringify(latestRec)+\u0027]}\u0027;\n    return str;\n}else{\n    var obj \u003d JSON.parse(flowVar);\n    obj[\u0027data\u0027].push(latestRec);\n    var appendedPayload \u003d JSON.stringify(obj);\n    return appendedPayload;\n}"}}</script>
+        <script>{"po_order_line_json":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar latestRec \u003d fd_data._7__generate_ecc_po_line_object.purchase_order_item;\nvar flowVar \u003d fd_data.flow_var.po_order_line_json;\nif(flowVar\u003d\u003d\u0027\u0027){\n    var str \u003d \u0027{\"data\":[\u0027+JSON.stringify(latestRec)+\u0027]}\u0027;\n    return str;\n}else{\n    var obj \u003d JSON.parse(flowVar);\n    obj[\u0027data\u0027].push(latestRec);\n    var appendedPayload \u003d JSON.stringify(obj);\n    return appendedPayload;\n}"}}</script>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-10 12:47:31</sys_created_on>
         <sys_id>37f3870487aa19102a18b846dabb35f8</sys_id>
@@ -861,7 +861,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -908,7 +908,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -942,7 +942,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1015,7 +1015,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1089,7 +1089,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1123,7 +1123,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-11-09 15:20:32</sys_updated_on>
-        <value>Create ECC PO Header Object Failed</value>
+        <value>Generate ECC PO header object Failed</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_1457520887e619102a18b846dabb35f8^id=b5b6c23187cb9910c04eb259dabb3537"/>
@@ -1163,7 +1163,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1211,7 +1211,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1245,7 +1245,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1292,7 +1292,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1339,7 +1339,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1413,7 +1413,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</flow>
+        <flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -1494,7 +1494,7 @@
         <label>PO Order Line JSON</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</model>
+        <model display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</model>
         <model_id>1457520887e619102a18b846dabb35f8</model_id>
         <model_table>sys_hub_flow</model_table>
         <name>var__m_sys_hub_flow_variable_1457520887e619102a18b846dabb35f8</name>
@@ -1519,7 +1519,7 @@
         <sys_id>27f3870487aa19102a18b846dabb35ac</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PO Order Line JSON</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_flow_variable_27f3870487aa19102a18b846dabb35ac</sys_update_name>
@@ -1551,7 +1551,7 @@
         <sys_id>dff3870487aa19102a18b846dabb3597</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PSM PO</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_1457520887e619102a18b846dabb35f8_psm_po_en</sys_update_name>
@@ -1576,7 +1576,7 @@
         <sys_id>63f3870487aa19102a18b846dabb35a2</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Status</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8_status_en</sys_update_name>
@@ -1599,7 +1599,7 @@
         <sys_id>63f3870487aa19102a18b846dabb35a5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Error Message</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8_error_message_en</sys_update_name>
@@ -1622,7 +1622,7 @@
         <sys_id>63f3870487aa19102a18b846dabb35a8</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ERP Purchase Order Number</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_1457520887e619102a18b846dabb35f8_erp_number_en</sys_update_name>
@@ -1678,7 +1678,7 @@
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=1457520887e619102a18b846dabb35f8^sys_idNOT IN57c6ef48872e19102a18b846dabb35dd"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
         <plan>com.snc.process_flow.engine.ProcessPlan@173ee6c</plan>
-        <plan_id display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</plan_id>
+        <plan_id display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</plan_id>
         <snapshot>34c66f48872e19102a18b846dabb35de</snapshot>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-10 15:19:34</sys_created_on>
@@ -1701,13 +1701,13 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>post_purchase_order_to_sap_ecc</internal_name>
-        <label_cache>[{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__.message","label":"15➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__","label":"15 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__","label":"1 - Create ECC PO Header Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD41bc5a4c78e61910d2dba6c50ebd3e88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fa8de6c0-dfce-4095-8520-3f37f942c124"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__dont_treat_as_error__","label":"1 - Create ECC PO Header Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a5108212-c4d0-4600-a18f-26363488a6c4"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.purchase_order_header","label":"1 - Create ECC PO Header Object➛Purchase Order Header","reference_display":"Purchase Order Header","type":"object","base_type":"object","attributes":{"sourceId":"5e009b9d-2f0c-4a92-9207-cc25b8196996","uiTypeLabel":"Object","co_type_name":"FD81bc5a4c4be6191025e7e680aad9628a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"d3ab3035-9572-40d4-a5e6-b27913d99c87","uiType":"object","uiUniqueId":"70145b9a-a72d-4fb3-a061-4821d8eb781f"}},{"name":"subflow.psm_po","label":"Input➛PSM PO","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"30f3e12b-8313-4e5d-9474-4eb411a5ff47"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Records","label":"2 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Table","label":"2 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c5c3f269-038f-425e-b0e6-f86f2a1e17ab.item","label":"6 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__action_status__","label":"7 - Create ECC PO Items Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD8b0dde4c2ee619105730026a34db41ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ee45b667-1960-4b8e-a4c9-f246bb300096"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__dont_treat_as_error__","label":"7 - Create ECC PO Items Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"6b05d276-6121-456d-8ca7-57550f719764"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.purchase_order_item","label":"7 - Create ECC PO Items Object➛Purchase Order Item","reference_display":"Purchase Order Item","type":"object","base_type":"object","attributes":{"sourceId":"17143926-d252-47db-917f-9af23ad7f0ac","uiTypeLabel":"Object","co_type_name":"FDcb0dde4c5be6191048ece1bdf990e1f0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b2cebc7d-922d-4767-8259-45ecec67099b","uiType":"object","uiUniqueId":"6991f111-e346-43ad-9755-51e24b7067a1"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.po_accounts","label":"6 - Create ECC PO Accounts Object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__action_status__","label":"6 - Create ECC PO Accounts Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__dont_treat_as_error__","label":"6 - Create ECC PO Accounts Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.output_object","label":"6 - Create Complex Object from JSON➛Output Object","reference_display":"Output Object","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ab39c3d4-62a9-49d3-9ad3-ceb136d094bf"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__action_status__","label":"6 - Create Complex Object from JSON➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9435860c0f6619109da07387f6e613d7","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7c849d27-a56e-456e-8cc2-4a0e37c2b650"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__dont_treat_as_error__","label":"6 - Create Complex Object from JSON➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f201b913-bae5-4856-a927-1ab4e349584e"}},{"name":"flow_variable.po_order_line_json","label":"Flow Variables➛PO Order Line JSON","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3939fbe3-cf50-4ce6-b38c-3cc18ffe9caa"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output","label":"10 - Create Purchase Order➛Purchase Order Data","reference_display":"Purchase Order Data","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13e9d601-4068-4e5a-b589-db29f9bd9867"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.status","label":"10 - Create Purchase Order➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ea5cd325-2103-40e2-8677-bec01a40679b"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.err","label":"10 - Create Purchase Order➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1c6d218e-0e3a-4896-b126-1b3ecb88e18f"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__action_status__","label":"10 - Create Purchase Order➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__dont_treat_as_error__","label":"10 - Create Purchase Order➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.record","label":"8 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.table_name","label":"8 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPPURCHASEORDER","label":"10➛Purchase Order Data➛Purchasing Document","type":"string","base_type":"string"},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Records","label":"10 - Look Up Records➛Purchasing Task Records","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Table","label":"10 - Look Up Records➛Purchasing Task Table","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Count","label":"10 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__action_status__","label":"10 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__dont_treat_as_error__","label":"10 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPHEADER.PO_NUMBER","label":"10➛Purchase Order Data➛Header Data [ EXPHEADER ]➛Purchasing Document","type":"string","base_type":"string"},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.po_accounts","label":"6 - Create ECC PO Accounts Object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__action_status__","label":"6 - Create ECC PO Accounts Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__dont_treat_as_error__","label":"6 - Create ECC PO Accounts Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.po_items","label":"9 - Create ECC PO Item Complex Object➛PO Items","reference_display":"PO Items","type":"array.object","base_type":"array.object","attributes":{"sourceId":"92023e21-5e31-4e8d-bbdf-ba345f85912b","child_name":"Item","uiUniqueId":"3198eac1-0374-46e8-b8b8-5b424ab15698","uiTypeLabel":"Array.Object","co_type_name":"FD430b8824ddae59105fb09458bada9bac","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f160293a-229b-4198-b71a-86c477decc0f","uiType":"array.object","child_type":"object","child_uiUniqueId":"4b606925-4c61-47af-a66a-b4db3015636a"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__action_status__","label":"9 - Create ECC PO Item Complex Object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD070b882496ae591061676671de8e8dae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ea07b35c-9463-478a-a386-d608403c0c11"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__dont_treat_as_error__","label":"9 - Create ECC PO Item Complex Object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"02b88379-8c9a-44b8-bab7-1322e478eece"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
+        <internal_name>create_purchase_order_in_sap_ecc</internal_name>
+        <label_cache>[{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__.message","label":"15➛Error Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}},{"name":"789e82aa-6b57-4f38-933f-1816c041e018.__status__","label":"15 - Error Handler➛Error Status","reference_display":"Error Status","type":"object","base_type":"object","attributes":{"uiType":"object","uiTypeLabel":"Object","co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__","label":"1 - Generate ECC PO header object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD41bc5a4c78e61910d2dba6c50ebd3e88","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"fa8de6c0-dfce-4095-8520-3f37f942c124"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__dont_treat_as_error__","label":"1 - Generate ECC PO header object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"a5108212-c4d0-4600-a18f-26363488a6c4"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.purchase_order_header","label":"1 - Generate ECC PO header object➛Purchase Order Header","reference_display":"Purchase Order Header","type":"object","base_type":"object","attributes":{"sourceId":"5e009b9d-2f0c-4a92-9207-cc25b8196996","uiTypeLabel":"Object","co_type_name":"FD81bc5a4c4be6191025e7e680aad9628a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"d3ab3035-9572-40d4-a5e6-b27913d99c87","uiType":"object","uiUniqueId":"70145b9a-a72d-4fb3-a061-4821d8eb781f"}},{"name":"subflow.psm_po","label":"Input➛PSM PO","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"30f3e12b-8313-4e5d-9474-4eb411a5ff47"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Records","label":"2 - Look Up Records➛Purchase Order Line Records","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Table","label":"2 - Look Up Records➛Purchase Order Line Table","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.Count","label":"2 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__action_status__","label":"2 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb9b1eba-2928-4671-a8db-19a854129121.__dont_treat_as_error__","label":"2 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c5c3f269-038f-425e-b0e6-f86f2a1e17ab.item","label":"6 - For Each➛Purchase Order Line Record","reference":"sn_shop_purchase_order_line","reference_display":"Purchase Order Line","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__action_status__","label":"7 - Generate ECC PO line object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD8b0dde4c2ee619105730026a34db41ee","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ee45b667-1960-4b8e-a4c9-f246bb300096"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.__dont_treat_as_error__","label":"7 - Generate ECC PO line object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"6b05d276-6121-456d-8ca7-57550f719764"}},{"name":"b4a05b7e-310e-4730-8f09-e50f95688e19.purchase_order_item","label":"7 - Generate ECC PO line object➛Purchase Order Item","reference_display":"Purchase Order Item","type":"object","base_type":"object","attributes":{"sourceId":"17143926-d252-47db-917f-9af23ad7f0ac","uiTypeLabel":"Object","co_type_name":"FDcb0dde4c5be6191048ece1bdf990e1f0","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"b2cebc7d-922d-4767-8259-45ecec67099b","uiType":"object","uiUniqueId":"6991f111-e346-43ad-9755-51e24b7067a1"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.po_accounts","label":"6 - Generate ECC PO accounts object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__action_status__","label":"6 - Generate ECC PO accounts object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"bda58c63-b21b-4d9e-8862-83d8a3e6ad58.__dont_treat_as_error__","label":"6 - Generate ECC PO accounts object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.output_object","label":"6 - Create Complex Object from JSON➛Output Object","reference_display":"Output Object","type":"dynamic_object","base_type":"dynamic_object","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","dynamic":"true","uiUniqueId":"ab39c3d4-62a9-49d3-9ad3-ceb136d094bf"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__action_status__","label":"6 - Create Complex Object from JSON➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD9435860c0f6619109da07387f6e613d7","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"7c849d27-a56e-456e-8cc2-4a0e37c2b650"}},{"name":"f261b01f-d61d-4634-93db-016551717f50.__dont_treat_as_error__","label":"6 - Create Complex Object from JSON➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"f201b913-bae5-4856-a927-1ab4e349584e"}},{"name":"flow_variable.po_order_line_json","label":"Flow Variables➛PO Order Line JSON","reference":"","reference_display":"","type":"json","base_type":"json","column_name":"","attributes":{"uiType":"json","uiTypeLabel":"JSON","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"3939fbe3-cf50-4ce6-b38c-3cc18ffe9caa"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output","label":"10 - Create Purchase Order➛Purchase Order Data","reference_display":"Purchase Order Data","type":"object","base_type":"object","attributes":{"dynamic":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"13e9d601-4068-4e5a-b589-db29f9bd9867"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.status","label":"10 - Create Purchase Order➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Success","value":"success","order":0.0},{"label":"Error","value":"error","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"ea5cd325-2103-40e2-8677-bec01a40679b"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.err","label":"10 - Create Purchase Order➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1c6d218e-0e3a-4896-b126-1b3ecb88e18f"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__action_status__","label":"10 - Create Purchase Order➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.__dont_treat_as_error__","label":"10 - Create Purchase Order➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.record","label":"8 - Update Record➛Purchase Order Record","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.table_name","label":"8 - Update Record➛Purchase Order Table","reference":"sn_shop_purchase_order","reference_display":"Purchase Order","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__action_status__","label":"8 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"dceb1181-e5b0-40dc-a2fd-2be7b087d5f7.__dont_treat_as_error__","label":"8 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPPURCHASEORDER","label":"10➛Purchase Order Data➛Purchasing Document","type":"string","base_type":"string"},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Records","label":"10 - Look Up Records➛Purchasing Task Records","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Table","label":"10 - Look Up Records➛Purchasing Task Table","reference":"sn_shop_task","reference_display":"Purchasing Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.Count","label":"10 - Look Up Records➛Count","reference_display":"Count","type":"integer","base_type":"integer","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__action_status__","label":"10 - Look Up Records➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"co_type_name":"FDACTIONSTATUS","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true"}},{"name":"8f046c7a-5711-49aa-a916-9c011600f1f2.__dont_treat_as_error__","label":"10 - Look Up Records➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true"}},{"name":"9011ce14-5a71-4cd5-baab-9524a59e513d.output.EXPHEADER.PO_NUMBER","label":"10➛Purchase Order Data➛Header Data [ EXPHEADER ]➛Purchasing Document","type":"string","base_type":"string"},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.po_accounts","label":"6 - Generate ECC PO accounts object➛PO Accounts","reference_display":"PO Accounts","type":"object","base_type":"object","attributes":{"sourceId":"f41787f7-23bd-42e0-8326-dac4de72ae37","uiTypeLabel":"Object","co_type_name":"FDcdaf4600c8e61910369a2d338711b06a","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"388e858a-d528-4f8d-920f-830b5997ac7b","uiType":"object","uiUniqueId":"fe217311-16e5-4622-9c19-a20228c33201"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__action_status__","label":"6 - Generate ECC PO accounts object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDc1af460023e6191075be7580cf865d6d","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"b77d7b05-e98d-4a93-af91-e298cf29f21f"}},{"name":"b22ca3b5-ce5c-4c4e-82bf-e34325c6ab2e.__dont_treat_as_error__","label":"6 - Generate ECC PO accounts object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"60a327f6-78a9-4d1a-bacb-8397e07fca28"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.po_items","label":"9 - Generate ECC PO lines complex object➛PO Items","reference_display":"PO Items","type":"array.object","base_type":"array.object","attributes":{"sourceId":"92023e21-5e31-4e8d-bbdf-ba345f85912b","child_name":"Item","uiUniqueId":"3198eac1-0374-46e8-b8b8-5b424ab15698","uiTypeLabel":"Array.Object","co_type_name":"FD430b8824ddae59105fb09458bada9bac","child_label":"Item","child_type_label":"Object","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceType":"step","sourceUiUniqueId":"f160293a-229b-4198-b71a-86c477decc0f","uiType":"array.object","child_type":"object","child_uiUniqueId":"4b606925-4c61-47af-a66a-b4db3015636a"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__action_status__","label":"9 - Generate ECC PO lines complex object➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FD070b882496ae591061676671de8e8dae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"ea07b35c-9463-478a-a386-d608403c0c11"}},{"name":"1c6a3b43-1726-43db-a720-2e949c0b9c4b.__dont_treat_as_error__","label":"9 - Generate ECC PO lines complex object➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"02b88379-8c9a-44b8-bab7-1322e478eece"}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.code","label":"1➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","attributes":{}},{"name":"a1ea85c9-a7dd-41c4-9b08-8be17957372e.__action_status__.message","label":"1➛Action Status➛Message","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Post Purchase Order to SAP ECC</name>
+        <name>Create purchase order in SAP ECC</name>
         <natlang/>
         <outputs/>
-        <parent_flow display_value="Post Purchase Order to SAP ECC">1457520887e619102a18b846dabb35f8</parent_flow>
+        <parent_flow display_value="Create purchase order in SAP ECC">1457520887e619102a18b846dabb35f8</parent_flow>
         <remote_trigger_id/>
         <run_as>system</run_as>
         <run_with_roles/>
@@ -1738,7 +1738,7 @@
     <sys_flow_cat_variable_model action="delete_multiple" query="id=34c66f48872e19102a18b846dabb35de^sys_idNOT INfcc66f48872e19102a18b846dabb35de"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
         <id>34c66f48872e19102a18b846dabb35de</id>
-        <name>Post Purchase Order to SAP ECC</name>
+        <name>Create purchase order in SAP ECC</name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-10 15:19:25</sys_created_on>
         <sys_id>fcc66f48872e19102a18b846dabb35de</sys_id>
@@ -1788,7 +1788,7 @@
         <label>PSM PO</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</model>
+        <model display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</model>
         <model_id>34c66f48872e19102a18b846dabb35de</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</name>
@@ -1870,7 +1870,7 @@
         <label>Error Message</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</model>
+        <model display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</model>
         <model_id>34c66f48872e19102a18b846dabb35de</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de</name>
@@ -1951,7 +1951,7 @@
         <label>Status</label>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</model>
+        <model display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</model>
         <model_id>34c66f48872e19102a18b846dabb35de</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de</name>
@@ -2032,7 +2032,7 @@
         <label>ERP Purchase Order Number</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</model>
+        <model display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</model>
         <model_id>34c66f48872e19102a18b846dabb35de</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de</name>
@@ -2079,11 +2079,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Items Object">760dde4c87e619102a18b846dabb3596</action_type>
-        <action_type_parent display_value="Create ECC PO Items Object">89f11347875e15102a18b846dabb355e</action_type_parent>
+        <action_type display_value="Generate ECC PO line object">760dde4c87e619102a18b846dabb3596</action_type>
+        <action_type_parent display_value="Generate ECC PO line object">89f11347875e15102a18b846dabb355e</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <order>7</order>
         <parent_ui_id>c5c3f269-038f-425e-b0e6-f86f2a1e17ab</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2118,7 +2118,7 @@
         <action_type_parent display_value="">9c60412a1baf84101793319acd4bcb14</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <order>10</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2197,7 +2197,7 @@
         <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <order>2</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2255,11 +2255,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Header Object">e0bc5a4c87e619102a18b846dabb3539</action_type>
-        <action_type_parent display_value="Create ECC PO Header Object">661866f6871ad1102a18b846dabb3572</action_type_parent>
+        <action_type display_value="Generate ECC PO header object">e0bc5a4c87e619102a18b846dabb3539</action_type>
+        <action_type_parent display_value="Generate ECC PO header object">661866f6871ad1102a18b846dabb3572</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <order>1</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2291,11 +2291,11 @@
     <sys_hub_action_instance action="INSERT_OR_UPDATE">
         <action_inputs/>
         <action_inputs/>
-        <action_type display_value="Create ECC PO Item Complex Object">3e0b882487ae59102a18b846dabb358d</action_type>
-        <action_type_parent display_value="Create ECC PO Item Complex Object">086988a087ae59102a18b846dabb35a8</action_type_parent>
+        <action_type display_value="Generate ECC PO lines complex object">3e0b882487ae59102a18b846dabb358d</action_type>
+        <action_type_parent display_value="Generate ECC PO lines complex object">086988a087ae59102a18b846dabb35a8</action_type_parent>
         <comment/>
         <display_text/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <order>9</order>
         <parent_ui_id>22518cee-21d0-4492-95b0-16705163cb4a</parent_ui_id>
         <sys_class_name>sys_hub_action_instance</sys_class_name>
@@ -2334,7 +2334,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2381,7 +2381,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2415,7 +2415,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2489,7 +2489,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2523,7 +2523,7 @@
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-11-09 15:20:42</sys_updated_on>
-        <value>Create ECC PO Header Object Failed</value>
+        <value>Generate ECC PO header object Failed</value>
         <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_34c66f48872e19102a18b846dabb35de^id=40c6463187cb9910c04eb259dabb35d0"/>
@@ -2563,7 +2563,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2610,7 +2610,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2658,7 +2658,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2732,7 +2732,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2780,7 +2780,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2814,7 +2814,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2848,7 +2848,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned>po_order_line_json</flow_variables_assigned>
         <inputs/>
@@ -2879,7 +2879,7 @@
         <input_name>po_order_line_json</input_name>
         <instance>d1c6af48872e19102a18b846dabb3531</instance>
         <referenced_table>sys_hub_flow_logic</referenced_table>
-        <script>{"po_order_line_json":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar latestRec \u003d fd_data._7__create_ecc_po_items_object.purchase_order_item;\nvar flowVar \u003d fd_data.flow_var.po_order_line_json;\nif(flowVar\u003d\u003d\u0027\u0027){\n    var str \u003d \u0027{\"data\":[\u0027+JSON.stringify(latestRec)+\u0027]}\u0027;\n    return str;\n}else{\n    var obj \u003d JSON.parse(flowVar);\n    obj[\u0027data\u0027].push(latestRec);\n    var appendedPayload \u003d JSON.stringify(obj);\n    return appendedPayload;\n}"}}</script>
+        <script>{"po_order_line_json":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\n\nvar latestRec \u003d fd_data._7__generate_ecc_po_line_object.purchase_order_item;\nvar flowVar \u003d fd_data.flow_var.po_order_line_json;\nif(flowVar\u003d\u003d\u0027\u0027){\n    var str \u003d \u0027{\"data\":[\u0027+JSON.stringify(latestRec)+\u0027]}\u0027;\n    return str;\n}else{\n    var obj \u003d JSON.parse(flowVar);\n    obj[\u0027data\u0027].push(latestRec);\n    var appendedPayload \u003d JSON.stringify(obj);\n    return appendedPayload;\n}"}}</script>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-10 15:19:27</sys_created_on>
         <sys_id>19c6af48872e19102a18b846dabb3532</sys_id>
@@ -2895,7 +2895,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -2968,7 +2968,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3015,7 +3015,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3089,7 +3089,7 @@
         <decision_table_inputs/>
         <display_text/>
         <extended_inputs/>
-        <flow display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
+        <flow display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</flow>
         <flow_variable/>
         <flow_variables_assigned/>
         <inputs/>
@@ -3185,7 +3185,7 @@
         <label>PO Order Line JSON</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Post Purchase Order to SAP ECC">34c66f48872e19102a18b846dabb35de</model>
+        <model display_value="Create purchase order in SAP ECC">34c66f48872e19102a18b846dabb35de</model>
         <model_id>34c66f48872e19102a18b846dabb35de</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
         <name>var__m_sys_hub_flow_variable_34c66f48872e19102a18b846dabb35de</name>
@@ -3210,7 +3210,7 @@
         <sys_id>d1c6af48872e19102a18b846dabb3528</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PO Order Line JSON</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_flow_variable_d1c6af48872e19102a18b846dabb3528</sys_update_name>
@@ -3242,7 +3242,7 @@
         <sys_id>85c6af48872e19102a18b846dabb3500</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PSM PO</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de_psm_po_en</sys_update_name>
@@ -3267,7 +3267,7 @@
         <sys_id>1dc6af48872e19102a18b846dabb351f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>ERP Purchase Order Number</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de_erp_number_en</sys_update_name>
@@ -3290,7 +3290,7 @@
         <sys_id>51c6af48872e19102a18b846dabb3518</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Error Message</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de_error_message_en</sys_update_name>
@@ -3313,7 +3313,7 @@
         <sys_id>c5c6af48872e19102a18b846dabb3510</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Status</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_flow_output_34c66f48872e19102a18b846dabb35de_status_en</sys_update_name>

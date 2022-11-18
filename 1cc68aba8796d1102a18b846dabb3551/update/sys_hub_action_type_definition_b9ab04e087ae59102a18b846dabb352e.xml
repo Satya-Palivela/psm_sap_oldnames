@@ -12,10 +12,10 @@
         <copied_from_name/>
         <description/>
         <ih_action>false</ih_action>
-        <internal_name>create_hana_po_item_complex_object</internal_name>
+        <internal_name>generate_hana_po_lines_complex_object</internal_name>
         <label_cache>[{"name":"{{action.json_string}}","label":"action➛JSON String","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].variable}}","label":"step➛Parse JSON➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].schema}}","label":"step➛Parse JSON➛schema","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].schema.Item}}","label":"step➛Parse JSON➛schema➛Item","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].__step_status__.code}}","label":"step➛Parse JSON➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].__step_status__.message}}","label":"step➛Parse JSON➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master_snapshot>427c40a487ae59102a18b846dabb352d</master_snapshot>
-        <name>Create Hana PO Item Complex Object</name>
+        <name>Generate Hana PO lines complex object</name>
         <natlang/>
         <outputs/>
         <outputs/>
@@ -27,9 +27,9 @@
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9ab04e087ae59102a18b846dabb352e</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>Create Hana PO Item Complex Object</sys_name>
+        <sys_name>Generate Hana PO lines complex object</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b9ab04e087ae59102a18b846dabb352e</sys_update_name>
@@ -55,7 +55,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=b9ab04e087ae59102a18b846dabb352e^sys_idNOT INa17c00a487ae59102a18b846dabb358f"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Create Hana PO Item Complex Object">b9ab04e087ae59102a18b846dabb352e</action>
+        <action display_value="Generate Hana PO lines complex object">b9ab04e087ae59102a18b846dabb352e</action>
         <cid>4401c68a-9773-4817-89c5-998455760de2</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -305,7 +305,7 @@
         <sys_id>a57c00a487ae59102a18b846dabb35ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>schema</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_a17c00a487ae59102a18b846dabb358f_schema_en</sys_update_name>
@@ -354,7 +354,7 @@
         <label>JSON String</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Create Hana PO Item Complex Object">b9ab04e087ae59102a18b846dabb352e</model>
+        <model display_value="Generate Hana PO lines complex object">b9ab04e087ae59102a18b846dabb352e</model>
         <model_id>b9ab04e087ae59102a18b846dabb352e</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_b9ab04e087ae59102a18b846dabb352e</name>
@@ -439,7 +439,7 @@
         <label>PO Items</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Create Hana PO Item Complex Object">b9ab04e087ae59102a18b846dabb352e</model>
+        <model display_value="Generate Hana PO lines complex object">b9ab04e087ae59102a18b846dabb352e</model>
         <model_id>b9ab04e087ae59102a18b846dabb352e</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_b9ab04e087ae59102a18b846dabb352e</name>
@@ -486,7 +486,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=b9ab04e087ae59102a18b846dabb352e"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b9ab04e087ae59102a18b846dabb352e^sys_idNOT IN717c40a487ae59102a18b846dabb3515"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Create Hana PO Item Complex Object">b9ab04e087ae59102a18b846dabb352e</action_type_id>
+        <action_type_id display_value="Generate Hana PO lines complex object">b9ab04e087ae59102a18b846dabb352e</action_type_id>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-11 12:42:37</sys_created_on>
         <sys_id>717c40a487ae59102a18b846dabb3515</sys_id>
@@ -524,7 +524,7 @@
         <sys_id>a57c00a487ae59102a18b846dabb358d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>JSON String</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_input_b9ab04e087ae59102a18b846dabb352e_json_string_en</sys_update_name>
@@ -549,7 +549,7 @@
         <sys_id>f17c40a487ae59102a18b846dabb3511</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PO Items</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b9ab04e087ae59102a18b846dabb352e_po_items_en</sys_update_name>
@@ -571,14 +571,14 @@
         <copied_from/>
         <copied_from_name/>
         <description/>
-        <internal_name>create_hana_po_item_complex_object</internal_name>
+        <internal_name>generate_hana_po_lines_complex_object</internal_name>
         <label_cache>[{"name":"{{action.json_string}}","label":"action➛JSON String","type":"action","ref":"","reference_display":"","base_type":"json","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].variable}}","label":"step➛Parse JSON➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].schema}}","label":"step➛Parse JSON➛schema","type":"step","ref":"","reference_display":"","base_type":"array.object","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].schema.Item}}","label":"step➛Parse JSON➛schema➛Item","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":[],"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].__step_status__.code}}","label":"step➛Parse JSON➛Step Status➛Code","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[4401c68a-9773-4817-89c5-998455760de2].__step_status__.message}}","label":"step➛Parse JSON➛Step Status➛Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
         <master>true</master>
-        <name>Create Hana PO Item Complex Object</name>
+        <name>Generate Hana PO lines complex object</name>
         <natlang/>
         <outputs/>
         <outputs/>
-        <parent_action display_value="Create Hana PO Item Complex Object">b9ab04e087ae59102a18b846dabb352e</parent_action>
+        <parent_action display_value="Generate Hana PO lines complex object">b9ab04e087ae59102a18b846dabb352e</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-11 12:42:38</sys_created_on>
@@ -640,7 +640,7 @@
     </sys_element_mapping>
     <sys_hub_step_instance action="delete_multiple" query="action=427c40a487ae59102a18b846dabb352d^sys_idNOT IN8e7c40a487ae59102a18b846dabb3535"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</action>
+        <action display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</action>
         <cid>4401c68a-9773-4817-89c5-998455760de2</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -890,7 +890,7 @@
         <sys_id>5a7c40a487ae59102a18b846dabb355c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>schema</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_8e7c40a487ae59102a18b846dabb3535_schema_en</sys_update_name>
@@ -939,7 +939,7 @@
         <label>JSON String</label>
         <mandatory>false</mandatory>
         <max_length>4000</max_length>
-        <model display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</model>
+        <model display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</model>
         <model_id>427c40a487ae59102a18b846dabb352d</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_427c40a487ae59102a18b846dabb352d</name>
@@ -1024,7 +1024,7 @@
         <label>PO Items</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</model>
+        <model display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</model>
         <model_id>427c40a487ae59102a18b846dabb352d</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d</name>
@@ -1109,7 +1109,7 @@
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</model>
+        <model display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</model>
         <model_id>427c40a487ae59102a18b846dabb352d</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d</name>
@@ -1194,7 +1194,7 @@
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</model>
+        <model display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</model>
         <model_id>427c40a487ae59102a18b846dabb352d</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d</name>
@@ -1241,7 +1241,7 @@
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=427c40a487ae59102a18b846dabb352d"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=427c40a487ae59102a18b846dabb352d^sys_idNOT INe67c40a487ae59102a18b846dabb357c"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Create Hana PO Item Complex Object">427c40a487ae59102a18b846dabb352d</action_type_id>
+        <action_type_id display_value="Generate Hana PO lines complex object">427c40a487ae59102a18b846dabb352d</action_type_id>
         <sys_created_by>satya</sys_created_by>
         <sys_created_on>2022-10-11 12:42:39</sys_created_on>
         <sys_id>e67c40a487ae59102a18b846dabb357c</sys_id>
@@ -1279,7 +1279,7 @@
         <sys_id>827c40a487ae59102a18b846dabb3534</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>JSON String</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_input_427c40a487ae59102a18b846dabb352d_json_string_en</sys_update_name>
@@ -1304,7 +1304,7 @@
         <sys_id>1a7c40a487ae59102a18b846dabb356c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>PO Items</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d_po_items_en</sys_update_name>
@@ -1327,7 +1327,7 @@
         <sys_id>567c40a487ae59102a18b846dabb3577</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Don't Treat as Error</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d___dont_treat_as_error___en</sys_update_name>
@@ -1350,7 +1350,7 @@
         <sys_id>9e7c40a487ae59102a18b846dabb3570</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Action Status</sys_name>
-        <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
+        <sys_package display_value="Procurement Service Management Integration for SAP" source="sn_psm_sap_int">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d___action_status___en</sys_update_name>
