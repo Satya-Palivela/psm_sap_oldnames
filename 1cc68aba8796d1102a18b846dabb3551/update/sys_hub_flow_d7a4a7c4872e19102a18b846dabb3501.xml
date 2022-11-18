@@ -28,24 +28,22 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d7a4a7c4872e19102a18b846dabb3501</sys_id>
-        <sys_mod_count>26</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Post Purchase Order to ERP</sys_name>
         <sys_overrides/>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_flow_d7a4a7c4872e19102a18b846dabb3501</sys_update_name>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-11-09 15:28:59</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 13:18:28</sys_updated_on>
         <type>flow</type>
     </sys_hub_flow>
     <sys_translated_text action="delete_multiple" query="documentkey=d7a4a7c4872e19102a18b846dabb3501"/>
     <sys_variable_value action="delete_multiple" query="document_key=d7a4a7c4872e19102a18b846dabb3501"/>
     <sys_flow_record_trigger action="INSERT_OR_UPDATE">
         <active>true</active>
-        <condition table="sn_shop_purchase_order">status=ordered^erp_numberISEMPTY<item display_value="Ordered" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="ordered"/>
-            <item endquery="false" field="erp_number" goto="false" newquery="false" operator="ISEMPTY" or="false" value=""/>
-        </condition>
+        <condition table="sn_shop_purchase_order">status=ordered^erp_numberISEMPTY</condition>
         <name/>
         <on_delete>false</on_delete>
         <on_insert>true</on_insert>
@@ -628,18 +626,6 @@
         <table>var__m_sys_hub_flow_input_1ac5ab08872e19102a18b846dabb35e4</table>
         <value>{{Created or Updated_1.current.legal_entity.erp_source}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>3f0f6780876e19102a18b846dabb358e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-10 15:55:40</sys_created_on>
-        <sys_id>c01f6780876e19102a18b846dabb35ae</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-10 15:55:40</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_3f0f6780876e19102a18b846dabb358e</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_3f0f6780876e19102a18b846dabb358e^id=3f0f6780876e19102a18b846dabb358e"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=3f0f6780876e19102a18b846dabb358e^sys_idNOT INb70f6780876e19102a18b846dabb3590"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -798,18 +784,6 @@
         <table>var__m_sys_hub_flow_input_188c6ad4872a59102a18b846dabb356b</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>59e31fa4872a9910c04eb259dabb35b7</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-12 03:13:57</sys_created_on>
-        <sys_id>d9e31fa4872a9910c04eb259dabb35d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-12 03:13:57</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_59e31fa4872a9910c04eb259dabb35b7</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_59e31fa4872a9910c04eb259dabb35b7^id=59e31fa4872a9910c04eb259dabb35b7"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=59e31fa4872a9910c04eb259dabb35b7^sys_idNOT IN19e31fa4872a9910c04eb259dabb35b8"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -954,18 +928,6 @@
         <table>var__m_sys_hub_flow_input_188c6ad4872a59102a18b846dabb356b</table>
         <value>{{Created or Updated_1.current}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>84da7a54876a59102a18b846dabb3554</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 06:45:53</sys_created_on>
-        <sys_id>dcda7a54876a59102a18b846dabb3567</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 06:45:53</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_84da7a54876a59102a18b846dabb3554</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_84da7a54876a59102a18b846dabb3554^id=84da7a54876a59102a18b846dabb3554"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=84da7a54876a59102a18b846dabb3554^sys_idNOT IN44da7a54876a59102a18b846dabb3555"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1098,18 +1060,6 @@
         <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
         <value>{{Created or Updated_1.current}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>bee0282c87ee59102a18b846dabb35a0</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 14:11:59</sys_created_on>
-        <sys_id>b2e0282c87ee59102a18b846dabb35b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:11:59</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_bee0282c87ee59102a18b846dabb35a0</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_bee0282c87ee59102a18b846dabb35a0^id=bee0282c87ee59102a18b846dabb35a0"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=bee0282c87ee59102a18b846dabb35a0^sys_idNOT IN7ee0282c87ee59102a18b846dabb35a1"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -1241,18 +1191,6 @@
         <sys_updated_on>2022-10-10 15:55:41</sys_updated_on>
         <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
         <value>{{Created or Updated_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>c81f6780876e19102a18b846dabb35b4</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-10 15:55:41</sys_created_on>
-        <sys_id>8c1fa780876e19102a18b846dabb3500</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-10 15:55:41</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_c81f6780876e19102a18b846dabb35b4</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_c81f6780876e19102a18b846dabb35b4^id=c81f6780876e19102a18b846dabb35b4"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=c81f6780876e19102a18b846dabb35b4^sys_idNOT IN481f6780876e19102a18b846dabb35f3"/>
@@ -2103,11 +2041,11 @@
         <sys_created_on>2022-10-10 15:12:42</sys_created_on>
         <sys_id>32356308872e19102a18b846dabb351a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d7a4a7c4872e19102a18b846dabb3501_changed_fields_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-10 15:12:42</sys_updated_on>
         <url/>
@@ -2126,11 +2064,11 @@
         <sys_created_on>2022-10-10 15:12:43</sys_created_on>
         <sys_id>32356308872e19102a18b846dabb351d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d7a4a7c4872e19102a18b846dabb3501_table_name_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-10 15:12:43</sys_updated_on>
         <url/>
@@ -2149,11 +2087,11 @@
         <sys_created_on>2022-10-10 15:12:42</sys_created_on>
         <sys_id>a6356308872e19102a18b846dabb3516</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_d7a4a7c4872e19102a18b846dabb3501_current_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-10 15:12:42</sys_updated_on>
         <url/>
@@ -2757,18 +2695,6 @@
         <table>var__m_sys_hub_flow_input_1ac5ab08872e19102a18b846dabb35e4</table>
         <value>{{Created or Updated_1.current.legal_entity.erp_source}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>40d46460872299102a18b846dabb3513</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 14:29:00</sys_created_on>
-        <sys_id>8cd46460872299102a18b846dabb3524</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:29:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_40d46460872299102a18b846dabb3513</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_40d46460872299102a18b846dabb3513^id=40d46460872299102a18b846dabb3513"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=40d46460872299102a18b846dabb3513^sys_idNOT IN00d46460872299102a18b846dabb3514"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -2901,18 +2827,6 @@
         <table>var__m_sys_hub_flow_input_34c66f48872e19102a18b846dabb35de</table>
         <value>{{Created or Updated_1.current}}</value>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>44d46460872299102a18b846dabb3525</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 14:29:00</sys_created_on>
-        <sys_id>94d46460872299102a18b846dabb3531</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:29:00</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_44d46460872299102a18b846dabb3525</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_44d46460872299102a18b846dabb3525^id=44d46460872299102a18b846dabb3525"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=44d46460872299102a18b846dabb3525^sys_idNOT IN00d46460872299102a18b846dabb3526"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -3044,18 +2958,6 @@
         <sys_updated_on>2022-10-11 14:29:01</sys_updated_on>
         <table>var__m_sys_hub_flow_input_057d582887ee59102a18b846dabb35db</table>
         <value>{{Created or Updated_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>5cd46460872299102a18b846dabb3531</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 14:29:01</sys_created_on>
-        <sys_id>2cd46460872299102a18b846dabb353d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:29:01</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_5cd46460872299102a18b846dabb3531</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_5cd46460872299102a18b846dabb3531^id=5cd46460872299102a18b846dabb3531"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=5cd46460872299102a18b846dabb3531^sys_idNOT IN18d46460872299102a18b846dabb3532"/>
@@ -3215,18 +3117,6 @@
         <table>var__m_sys_hub_flow_input_188c6ad4872a59102a18b846dabb356b</table>
         <value/>
     </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>67e3dfa4872a9910c04eb259dabb3520</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-12 03:14:06</sys_created_on>
-        <sys_id>6be3dfa4872a9910c04eb259dabb352c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-12 03:14:06</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_67e3dfa4872a9910c04eb259dabb3520</table>
-        <value/>
-    </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_67e3dfa4872a9910c04eb259dabb3520^id=67e3dfa4872a9910c04eb259dabb3520"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=67e3dfa4872a9910c04eb259dabb3520^sys_idNOT IN23e3dfa4872a9910c04eb259dabb3521"/>
     <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
@@ -3370,18 +3260,6 @@
         <sys_updated_on>2022-10-11 14:29:02</sys_updated_on>
         <table>var__m_sys_hub_flow_input_188c6ad4872a59102a18b846dabb356b</table>
         <value>{{Created or Updated_1.current}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>wait_for_completion</field>
-        <id>e0d46460872299102a18b846dabb353e</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 14:29:02</sys_created_on>
-        <sys_id>20d46460872299102a18b846dabb3557</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 14:29:02</sys_updated_on>
-        <table>var__m_sys_hub_sub_flow_instance_inputs_e0d46460872299102a18b846dabb353e</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_e0d46460872299102a18b846dabb353e^id=e0d46460872299102a18b846dabb353e"/>
     <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=e0d46460872299102a18b846dabb353e^sys_idNOT INacd46460872299102a18b846dabb353e"/>
@@ -4232,11 +4110,11 @@
         <sys_created_on>2022-10-11 14:28:58</sys_created_on>
         <sys_id>23c42460872299102a18b846dabb35b4</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Table Name</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e3c42460872299102a18b846dabb3579_table_name_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 14:28:58</sys_updated_on>
         <url/>
@@ -4255,11 +4133,11 @@
         <sys_created_on>2022-10-11 14:28:57</sys_created_on>
         <sys_id>2bc42460872299102a18b846dabb358b</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Record</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e3c42460872299102a18b846dabb3579_current_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 14:28:57</sys_updated_on>
         <url/>
@@ -4278,11 +4156,11 @@
         <sys_created_on>2022-10-11 14:28:58</sys_created_on>
         <sys_id>e7c42460872299102a18b846dabb3593</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Changed Fields</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_flow_input_e3c42460872299102a18b846dabb3579_changed_fields_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 14:28:58</sys_updated_on>
         <url/>

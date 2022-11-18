@@ -26,15 +26,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>b9ab04e087ae59102a18b846dabb352e</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name>Create Hana PO Item Complex Object</sys_name>
         <sys_overrides/>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_b9ab04e087ae59102a18b846dabb352e</sys_update_name>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
+        <sys_updated_by>satyasagar.palivela@snc</sys_updated_by>
+        <sys_updated_on>2022-11-18 13:18:10</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -112,18 +112,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a17c00a487ae59102a18b846dabb358f"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>a17c00a487ae59102a18b846dabb358f</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 12:42:36</sys_created_on>
-        <sys_id>e97c00a487ae59102a18b846dabb35ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 12:42:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>paylaod</field>
         <id>a17c00a487ae59102a18b846dabb358f</id>
         <sys_created_by>satya</sys_created_by>
@@ -134,18 +122,6 @@
         <sys_updated_on>2022-10-11 12:42:36</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_a17c00a487ae59102a18b846dabb358f</table>
         <value>{{action.json_string}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>a17c00a487ae59102a18b846dabb358f</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 12:42:36</sys_created_on>
-        <sys_id>ad7c00a487ae59102a18b846dabb35ed</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 12:42:36</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a17c00a487ae59102a18b846dabb358f^id=a17c00a487ae59102a18b846dabb358f"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=a17c00a487ae59102a18b846dabb358f"/>
@@ -328,11 +304,11 @@
         <sys_created_on>2022-10-11 12:42:36</sys_created_on>
         <sys_id>a57c00a487ae59102a18b846dabb35ea</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>schema</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_a17c00a487ae59102a18b846dabb358f_schema_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:36</sys_updated_on>
         <url/>
@@ -547,11 +523,11 @@
         <sys_created_on>2022-10-11 12:42:35</sys_created_on>
         <sys_id>a57c00a487ae59102a18b846dabb358d</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>JSON String</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_b9ab04e087ae59102a18b846dabb352e_json_string_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:35</sys_updated_on>
         <url/>
@@ -572,11 +548,11 @@
         <sys_created_on>2022-10-11 12:42:37</sys_created_on>
         <sys_id>f17c40a487ae59102a18b846dabb3511</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>PO Items</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_b9ab04e087ae59102a18b846dabb352e_po_items_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:37</sys_updated_on>
         <url/>
@@ -721,18 +697,6 @@
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=8e7c40a487ae59102a18b846dabb3535"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>8e7c40a487ae59102a18b846dabb3535</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 12:42:39</sys_created_on>
-        <sys_id>5e7c40a487ae59102a18b846dabb355f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>paylaod</field>
         <id>8e7c40a487ae59102a18b846dabb3535</id>
         <sys_created_by>satya</sys_created_by>
@@ -743,18 +707,6 @@
         <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_8e7c40a487ae59102a18b846dabb3535</table>
         <value>{{action.json_string}}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>script</field>
-        <id>8e7c40a487ae59102a18b846dabb3535</id>
-        <sys_created_by>satya</sys_created_by>
-        <sys_created_on>2022-10-11 12:42:39</sys_created_on>
-        <sys_id>127c40a487ae59102a18b846dabb3560</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>satya</sys_updated_by>
-        <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
-        <value/>
     </sys_element_mapping>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_8e7c40a487ae59102a18b846dabb3535^id=8e7c40a487ae59102a18b846dabb3535"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=8e7c40a487ae59102a18b846dabb3535"/>
@@ -937,11 +889,11 @@
         <sys_created_on>2022-10-11 12:42:38</sys_created_on>
         <sys_id>5a7c40a487ae59102a18b846dabb355c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>schema</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_step_ext_output_8e7c40a487ae59102a18b846dabb3535_schema_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:38</sys_updated_on>
         <url/>
@@ -1326,11 +1278,11 @@
         <sys_created_on>2022-10-11 12:42:38</sys_created_on>
         <sys_id>827c40a487ae59102a18b846dabb3534</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>JSON String</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_input_427c40a487ae59102a18b846dabb352d_json_string_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:38</sys_updated_on>
         <url/>
@@ -1351,11 +1303,11 @@
         <sys_created_on>2022-10-11 12:42:39</sys_created_on>
         <sys_id>1a7c40a487ae59102a18b846dabb356c</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>PO Items</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d_po_items_en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
         <url/>
@@ -1374,11 +1326,11 @@
         <sys_created_on>2022-10-11 12:42:39</sys_created_on>
         <sys_id>567c40a487ae59102a18b846dabb3577</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Don't Treat as Error</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d___dont_treat_as_error___en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
         <url/>
@@ -1397,11 +1349,11 @@
         <sys_created_on>2022-10-11 12:42:39</sys_created_on>
         <sys_id>9e7c40a487ae59102a18b846dabb3570</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>Action Status</sys_name>
         <sys_package display_value="Procurement Service Management Integration for SAP" source="x_snc_psm_sap_intg">1cc68aba8796d1102a18b846dabb3551</sys_package>
         <sys_policy/>
         <sys_scope display_value="Procurement Service Management Integration for SAP">1cc68aba8796d1102a18b846dabb3551</sys_scope>
-        <sys_update_name/>
+        <sys_update_name>sys_documentation_var__m_sys_hub_action_output_427c40a487ae59102a18b846dabb352d___action_status___en</sys_update_name>
         <sys_updated_by>satya</sys_updated_by>
         <sys_updated_on>2022-10-11 12:42:39</sys_updated_on>
         <url/>
